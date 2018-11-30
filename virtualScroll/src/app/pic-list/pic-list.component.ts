@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-pic-list',
@@ -12,8 +12,6 @@ export class PicListComponent implements OnInit {
   ngOnInit() {
   }
 
-  pic1 = 'http://www.preachinginparadise.com/media/img/clouds10-8-2018.JPG';
-
   picList =['http://www.preachinginparadise.com/media/img/clouds10-8-2018.JPG',
             'http://www.preachinginparadise.com/media/img/hike10-8-2018.JPG',
             'http://www.preachinginparadise.com/media/img/patriciaPresent9-17-018.JPG',
@@ -23,5 +21,13 @@ export class PicListComponent implements OnInit {
             'http://www.preachinginparadise.com/media/img/makemoBellyButton7-9-2018.JPG',
             'http://www.preachinginparadise.com/media/img/lovely7-2-2018.JPG'
   ]
+
+  @ViewChild('imgDisp')
+  primarySampleComponent: pic-list;
+
+  startIndex = Math.floor(scrollTop / rowHeight);
+  endIndex = Math.ceil((scrollTop + height) / rowHeight);
+
+  itemsInView = picListView.slice(startIndex, endIndex);
 
 }

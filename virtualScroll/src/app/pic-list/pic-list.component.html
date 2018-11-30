@@ -2,5 +2,9 @@
   pic-list works!
 </p>
 <div>
-  <img *ngFor="let pic of picList" src={{pic}}>
+  <img class="imgDisp" 
+  *ngFor="let pic of picListView"
+  src={{pic}} 
+  [style.height]="rowHeight + 'px'"
+  [style.line-height]="rowHeight + 'px'">
 </div>
