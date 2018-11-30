@@ -13,6 +13,15 @@ export class PicListComponent implements OnInit {
   }
 
   pic1 = 'http://www.preachinginparadise.com/media/img/clouds10-8-2018.JPG';
-  pic2 = 'http://www.preachinginparadise.com/media/img/clouds10-8-2018.JPG';
-  
+
+  picList =['http://www.preachinginparadise.com/media/img/clouds10-8-2018.JPG',
+            'http://www.preachinginparadise.com/media/img/hike10-8-2018.JPG',
+            'http://www.preachinginparadise.com/media/img/patriciaPresent9-17-018.JPG',
+            'http://www.preachinginparadise.com/media/img/fafaru9-10-2018.jpg',
+            'http://www.preachinginparadise.com/media/img/pirae7-23-2018.JPG',
+            'http://www.preachinginparadise.com/media/img/makemoEnd7-9-2018.JPG',
+            'http://www.preachinginparadise.com/media/img/makemoBellyButton7-9-2018.JPG',
+            'http://www.preachinginparadise.com/media/img/lovely7-2-2018.JPG'
+  ]
+
 }
