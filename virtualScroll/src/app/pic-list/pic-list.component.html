@@ -1,6 +1,6 @@
 <p>
   pic-list works!
 </p>
-<img title='clouds' src={{pic1}}>
-<img src={{pic2}}>
-
+<div>
+  <img *ngFor="let pic of picList" src={{pic}}>
+</div>
