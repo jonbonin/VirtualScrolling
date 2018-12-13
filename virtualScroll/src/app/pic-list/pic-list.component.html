@@ -1,6 +1,24 @@
-<p>
-  pic-list works!
-</p>
-<div>
+<p>pic-list works!</p>
+<!-- <div>
   <img *ngFor="let pic of picList" src={{pic}}>
-</div>
+</div> -->
+
+
+ <cdk-virtual-scroll-viewport itemSize="600">
+    <div *cdkVirtualFor="let pic of picList" >
+        <img src="{{pic}}" />
+    </div>
+  </cdk-virtual-scroll-viewport>
+
+<!-- <cdk-virtual-scroll-viewport itemSize="100">
+ 
+    <li *cdkVirtualFor="let p of dummydata;" class="animated lightSpeedIn item-wrap">
+      <div class="thumbnail-wrap">
+          <img src="{{p.avatar}}" />
+      </div>
+      <div class="info-wrap">
+          <h4>{{p.name}}</h4>
+          <h6>{{p.company}}</h6>
+      </div>
+    </li>
+</cdk-virtual-scroll-viewport> -->
