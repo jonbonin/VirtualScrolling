@@ -24,4 +24,32 @@ export class PicListComponent implements OnInit {
             'http://www.preachinginparadise.com/media/img/lovely7-2-2018.JPG'
   ]
 
+  // picList = ['1234',
+  //            '4567',
+  //           '789']
+
 }
+
+
+// import { Component } from '@angular/core';
+// import * as faker from 'faker';
+// @Component({
+//   selector: 'app-root',
+//   templateUrl: './app.component.html',
+//   styleUrls: ['./app.component.scss']
+// })
+// export class AppComponent {
+//   title = 'Ng7InfiniteVirtualScroll';
+//   dummydata;
+//   constructor() { 
+//     this.dummydata = Array(10000)
+//       .fill(1)
+//       .map(_ => {
+//         return {
+//           name: faker.name.findName(),
+//           company:faker.company.companyName(),
+//           avatar:faker.image.avatar()
+//         };
+//       });
+//   }
+// }
