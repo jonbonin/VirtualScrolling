@@ -24,6 +24,13 @@ export class PicListComponent implements OnInit {
             'http://www.preachinginparadise.com/media/img/lovely7-2-2018.JPG'
   ]
 
+  paraList = [
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar fermentum consequat. Donec fringilla elit tristique, vulputate sapien pulvinar, placerat urna.',
+              'Nulla dictum pellentesque congue. Proin laoreet leo at velit vehicula, et aliquet ipsum cursus. Morbi fringilla ultricies tempus. In congue iaculis elit, ac placerat lectus pellentesque ut.',
+              'Praesent pretium dui eget ultrices tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere tellus vitae porta faucibus.',
+              '<img src = "http://www.preachinginparadise.com/media/img/lovely7-2-2018.JPG"/>'
+  ]
+
   // picList = ['1234',
   //            '4567',
   //           '789']

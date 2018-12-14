@@ -5,8 +5,12 @@
 
 
  <cdk-virtual-scroll-viewport itemSize="600">
-    <div *cdkVirtualFor="let pic of picList" >
-        <img src="{{pic}}" />
+    <div *cdkVirtualFor="let pic of paraList" >
+      ngfor pic 
+      ngfor p
+      <!-- <p>{{pic}}</p> -->
+        <!-- <img src="{{pic}}" /> -->
+        <!-- <p>1234</p> -->
     </div>
   </cdk-virtual-scroll-viewport>
 
