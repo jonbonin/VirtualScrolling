@@ -4,31 +4,31 @@
 </div> -->
 
 
- <!-- <cdk-virtual-scroll-viewport itemSize="600">
+<!-- <cdk-virtual-scroll-viewport itemSize="600">
     <div *cdkVirtualFor="let pic of paraList" >
     </div>
   </cdk-virtual-scroll-viewport> -->
 
-  <cdk-virtual-scroll-viewport itemSize="800">
-    <div *cdkVirtualFor="let p of posts" >
-      <h2>{{p.title}}</h2>
-      <h3>{{p.date}}</h3>
-      <div *ngFor="let pp of p.post">
-        <!-- <p>This is the posts.post object{{pp}}</p> -->
-        <div *ngFor="let ppa of pp.allData">
-          <!-- <p>This is the posts.post.allData object</p> -->
-          <section *ngIf="img" *ngFor="let ppad of ppa.data">
-            <!-- <p>This is the posts.post.allData.data object</p> -->
-            <img src="{{ppad.img}}">
+<cdk-virtual-scroll-viewport itemSize="800">
+  <div *cdkVirtualFor="let p of posts">
+    <h2>{{p.title}}</h2>
+    <h3>{{p.date}}</h3>
+    <div *ngFor="let pp of p.post">
+      <!-- <p>This is the posts.post object{{pp}}</p> -->
+      <div *ngFor="let ppa of pp.allData">
+        <!-- <p>This is the posts.post.allData object</p> -->
+        <section *ngFor="let ppad of ppa.data">
+          <!-- <p>This is the posts.post.allData.data object</p> -->
+          <img src="{{ppad.img}}">
+          <section *ngFor="let ppadp of ppad.para">
+            <p>{{ppadp.p}}</p>
           </section>
-          <section *ngFor="let ppad of ppa.data">
-            <p>{{ppad.p}}</p>
-          </section>
-        </div>
+        </section>
       </div>
-      <hr>
     </div>
-  </cdk-virtual-scroll-viewport>
+    <hr>
+  </div>
+</cdk-virtual-scroll-viewport>
 
 <!-- <cdk-virtual-scroll-viewport itemSize="100">
  

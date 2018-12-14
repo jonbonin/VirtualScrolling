@@ -53,22 +53,28 @@ export class PicListComponent implements OnInit {
       {allData:[
         {data:[
           {img:'http://www.preachinginparadise.com/media/img/clouds10-8-2018.JPG'},
-          {p:'There is so much going on in the world.'},
-          {p:'I cannot possibly handle what is going on.'},
-          {p:'Will you help?'}
+          {para:[
+            {p:'There is so much going on in the world.'},
+            {p:'I cannot possibly handle what is going on.'},
+            {p:'Will you help?'}
+          ]}
         ]},
         {data:[
           {img:'http://www.preachinginparadise.com/media/img/hike10-8-2018.JPG'},
-          {p:'I can\' believe that we are going to the ocean!.'},
-          {p:'It is like there is nothing in the world that can exist but this.'},
-          {p:'Can it be done in such a way where I can live like this forever?'},
-          {p:'\'Cause I don\'t think that it is possible for it to live for that long'}
+          {para:[
+            {p:'I can\' believe that we are going to the ocean!.'},
+            {p:'It is like there is nothing in the world that can exist but this.'},
+            {p:'Can it be done in such a way where I can live like this forever?'},
+            {p:'\'Cause I don\'t think that it is possible for it to live for that long'}
+          ]}
         ]},
         {data:[
           {img:'http://www.preachinginparadise.com/media/img/patriciaPresent9-17-018.JPG'},
-          {p:'Do you like this Pineapple?'},
-          {p:'I like it.'},
-          {p:'Want to share?'}
+          {para:[
+            {p:'Do you like this Pineapple?'},
+            {p:'I like it.'},
+            {p:'Want to share?'}
+          ]}
         ]}
       ]}
     ]
