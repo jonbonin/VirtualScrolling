@@ -7,6 +7,7 @@ import { PlatformModule } from '@angular/cdk/platform';
 import { AppComponent } from './app.component';
 import { PicListComponent } from './pic-list/pic-list.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

@@ -1,18 +1,35 @@
-<p>pic-list works!</p>
+<!-- <p>pic-list works!</p> -->
+
 <!-- <div>
   <img *ngFor="let pic of picList" src={{pic}}>
 </div> -->
 
 
- <cdk-virtual-scroll-viewport itemSize="600">
+<!-- <cdk-virtual-scroll-viewport itemSize="600">
     <div *cdkVirtualFor="let pic of paraList" >
-      ngfor pic 
-      ngfor p
-      <!-- <p>{{pic}}</p> -->
-        <!-- <img src="{{pic}}" /> -->
-        <!-- <p>1234</p> -->
     </div>
-  </cdk-virtual-scroll-viewport>
+  </cdk-virtual-scroll-viewport> -->
+
+<cdk-virtual-scroll-viewport itemSize="600">
+  <div *cdkVirtualFor="let p of posts">
+    <h2>{{p.title}}</h2>
+    <h3>{{p.date}}</h3>
+    <div *ngFor="let pp of p.post">
+      <!-- <p>This is the posts.post object{{pp}}</p> -->
+      <div *ngFor="let ppa of pp.allData">
+        <!-- <p>This is the posts.post.allData object</p> -->
+        <section id="1" *ngFor="let ppad of ppa.data">
+          <!-- <p>This is the posts.post.allData.data object</p> -->
+          <img id ="2" src="{{ppad.img}}">
+          <section id ="3" *ngFor="let ppadp of ppad.para">
+            <p>{{ppadp.p}}</p>
+          </section>
+        </section>
+      </div>
+    </div>
+    <hr>
+  </div>
+</cdk-virtual-scroll-viewport>
 
 <!-- <cdk-virtual-scroll-viewport itemSize="100">
  
